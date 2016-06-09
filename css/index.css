@@ -1,5 +1,3 @@
-
-
 body {
   font-family: 'Open Sans', sans-serif;
   background: url(../images/codeSplash50.png);
@@ -62,124 +60,97 @@ a.dropdown-toggle {
 .nav .open > a:focus {
   background-color: #34495e;
 }
-.email {
-  color: #e0e0e0;
-  -o-transition: .4s, width 1s;
-  -ms-transition: .4s, width 1s;
-  -moz-transition: .4s, width 1s;
-  -webkit-transition: .4s, width 1s;
-  -webkit-backface-visibility: hidden;
-  /* Chrome, Safari, Opera */
-  backface-visibility: hidden;
-  background-color: #16a085;
-  white-space: nowrap;
-}
-.email:hover {
-  background-color: #1abc9c;
-  width: 220px;
-}
-.github {
-  color: #e0e0e0;
-  -o-transition: .4s, width 1s;
-  -ms-transition: .4s, width 1s;
-  -moz-transition: .4s, width 1s;
-  -webkit-transition: .4s, width 1s;
-  -webkit-backface-visibility: hidden;
-  /* Chrome, Safari, Opera */
-  backface-visibility: hidden;
-  background-color: #d35400;
-  white-space: nowrap;
-}
-.github:hover {
-  background-color: #e67e22;
-  width: 220px;
-}
-.linkedin {
-  position: relative;
-  color: #e0e0e0;
-  -o-transition: .4s, width 1s;
-  -ms-transition: .4s, width 1s;
-  -moz-transition: .4s, width 1s;
-  -webkit-transition: .4s, width 1s;
-  -webkit-backface-visibility: hidden;
-  /* Chrome, Safari, Opera */
-  backface-visibility: hidden;
-  background-color: #c0392b;
-  white-space: nowrap;
-}
-.linkedin:hover {
-  background-color: #e74c3c;
-  width: 220px;
-}
-i.fa.fa-folder {
+
+i.fa {
   padding-right: 5px;
   color: #e0e0e0;
 }
-.social-icons li {
-  height: 50px;
-  width: 50px;
-  padding: 15px;
-  padding-left: 16px;
+
+.social-icons li{
+  margin: -1px -2px 0px -2px;
 }
-.email #emailText {
-  padding-left: 7px;
-  padding-right: 7px;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  -webkit-transition-delay: .5s;
-  transition-delay: .5s;
-  opacity: 0;
-  white-space: nowrap;
+
+.email {
+  display: inline-block;
+  background-color: #16A085;
+  padding: 0;  
+  transition: all .5s;  
 }
-.email:hover #emailText {
-  opacity: 1;
+
+.email a {
+  transition: all .5s;
 }
-.github #githubText {
-  padding-left: 7px;
-  padding-right: 7px;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  -webkit-transition-delay: .5s;
-  transition-delay: .5s;
-  opacity: 0;
-  white-space: nowrap;
+
+.email a:focus {
+  color: #e0e0e0!important;
+  background-color: #16A085!important;
 }
-.github:hover #githubText {
-  opacity: 1;
+
+
+.email a:hover {
+  transition: all .5s; 
+  color: #e0e0e0!important;
+  background-color: #1ABC9C!important;
 }
-.linkedin #linkedText {
-  position: absolute;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 1px;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  -webkit-transition-delay: .5s;
-  transition-delay: .5s;
-  opacity: 0;
-  white-space: nowrap;
+
+
+.github {
+  display: inline-block;
+  background-color: #D35400;
+  padding: 0;    
 }
-.linkedin:hover #linkedText {
-  opacity: 1;
+
+.github a {
+  transition: all .5s;
 }
-.splashIMG {
+
+.github a:focus {
+  color: #e0e0e0!important;
+  background-color: #D35400!important;
+}
+
+.github a:hover {
+  transition: all .5s; 
+  color: #e0e0e0!important;
+  background-color: #E67E22!important;
+}
+
+
+.linkedin {
+  display: inline-block;
+  background-color: #C0392B;
+  padding: 0;    
+}
+
+.linkedin a {
+  transition: all .5s;
+}
+
+.linkedin a:focus {
+  color: #e0e0e0!important;
+  background-color: #C0392B!important;
+}
+
+
+.linkedin a:hover {
+  transition: all .5s; 
+  color: #e0e0e0!important;
+  background-color: #E74C3C!important;
+}
+
+
+
+#splashIMG {
   width: 100%;
-  height: 900px;
+  padding-bottom: 15%;
 }
 .splashText {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 64px;
-  text-align: right;
+  font-size: 48px;
+  text-align: center;
   color: #e0e0e0;
   padding-top: 10%;
-  padding-right: 5%;
 }
 .splashText .domain {
   font-size: 92px;
@@ -200,47 +171,48 @@ ul.dropdown-menu a:hover {
   font-size: 24px;
   font-weight: 300;
   color: #f9f9f9;
+  bottom: 0;
 }
 .ps1 {
   background-color: #f1c40f;
-  height: 280px;
   -o-transition: .4s;
   -ms-transition: .4s;
   -moz-transition: .4s;
   -webkit-transition: .4s;
+  height: 300px;
 }
 .ps1:hover {
   background-color: #f1cc33;
 }
 .ps2 {
   background-color: #8e44ad;
-  height: 280px;
   -o-transition: .4s;
   -ms-transition: .4s;
   -moz-transition: .4s;
   -webkit-transition: .4s;
+  height: 300px;
 }
 .ps2:hover {
   background-color: #9865ad;
 }
 .ps3 {
   background-color: #3498db;
-  height: 280px;
   -o-transition: .4s;
   -ms-transition: .4s;
   -moz-transition: .4s;
   -webkit-transition: .4s;
+  height: 300px;
 }
 .ps3:hover {
   background-color: #5faadb;
 }
 .ps4 {
   background-color: #1abc9c;
-  height: 280px;
   -o-transition: .4s;
   -ms-transition: .4s;
   -moz-transition: .4s;
   -webkit-transition: .4s;
+  height: 300px;
 }
 .ps4:hover {
   background-color: #4cbc9e;
